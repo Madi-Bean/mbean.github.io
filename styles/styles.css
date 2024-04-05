@@ -1,0 +1,48 @@
+body{
+	background-color: #fcedf2;
+}
+
+.btn-primary, .btn-primary:hover{
+	background-color: #c095e4;
+	border-color: #c095e4;
+}
+
+.btn-primary:hover{
+	background-color: #a462d7;
+	border-color: #a462d7;
+}
+
+.navbar-custom {
+    background-color: #ea6e9b;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text,
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .nav-item .nav-link,
+.navbar-custom p {
+    color: #fcedf2;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.accordion-button{
+	color: #a462d7;
+}
+
+.accordion-button:not(.collapsed){
+	background-color: #dec1eb;
+	color: #a462d7;
+	
+} 
+
+.accordion-button:focus,
+.accordion-button:hover{
+	background-color: #dec1eb;
+	box-shadow: none;
+}
