@@ -1,19 +1,32 @@
-body{
-	background-color: #fcedf2;
+:root{
+	--color-5 : #2a469f;
+	--color-4 : #5182cf;
+	--color-3 : #80c0ff;
+	--color-2 : #9dc3ff;
+	--color-1 : #b6c5ff;
 }
 
-.btn-primary, .btn-primary:hover{
-	background-color: #c095e4;
-	border-color: #c095e4;
+body{
+	background-color: var(--color-1);
+}
+
+p, li{
+	font-size: 20px;
+}
+
+.btn-primary{
+	background-color: var(--color-5);
+	border-color: var(--color-5);
 }
 
 .btn-primary:hover{
-	background-color: #a462d7;
-	border-color: #a462d7;
+	background-color: var(--color-4);
+	border-color: var(--color-4);
 }
 
 .navbar-custom {
-    background-color: #ea6e9b;
+
+    background-color: var(--color-5);
 }
 
 .navbar-custom .navbar-brand,
@@ -21,7 +34,13 @@ body{
 .navbar-custom .navbar-nav .nav-link,
 .navbar-custom .nav-item .nav-link,
 .navbar-custom p {
-    color: #fcedf2;
+    color: var(--color-1);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.current-nav-link{
+	background-image: linear-gradient(var(--color-4), var(--color-5), var(--color-4));
 }
 
 .navbar-custom .nav-item.active .nav-link,
@@ -31,18 +50,53 @@ body{
     font-weight: bold;
 }
 
+table{
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	border: 2px;
+	border-collapse: collapse;
+	border-style: solid;
+	border-color: var(--color-5);
+	background-color: white;
+}
+
+td, th {
+	text-align: center;
+	border: 1px;
+	border-collapse: collapse;
+	border-style: solid;
+	border-color:  var(--color-4);
+	padding: 10px 20px;
+	color: var(--color-5);
+}
+
+th {
+	background-color: var(--color-2);
+}
+
+td {
+	background-color: white;
+}
+
+table caption {
+	color: var(--color-5);
+}
+
 .accordion-button{
-	color: #a462d7;
+	background-color: white;
+	color: var(--color-5);
+	font-size: 18px;
 }
 
 .accordion-button:not(.collapsed){
-	background-color: #dec1eb;
-	color: #a462d7;
+	background-color: var(--color-3);
+	color: var(--color-5);
 	
 } 
 
 .accordion-button:focus,
 .accordion-button:hover{
-	background-color: #dec1eb;
+	background-color: var(--color-3);
 	box-shadow: none;
 }
